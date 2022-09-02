@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    padding:0px;
+    margin:0px; 
+}
+.top-bar{
+    background: #333;
+    height: 25px;
+    position:relative;
+}
+.top-bar button{
+    position:absolute;
+    background: transparent;
+    color:white;
+    border: none;
+    padding:3px;
+    margin:2px;
+}
+.top-bar #logout-btn{
+    left:0px;
+    top:0px;
+}
+.top-bar #save-btn{
+    right:0px;
+    top: 0px;
+}
+.top-bar #save-btn span{
+    color:rgb(160, 160, 160)
+}
+
+#wrapper{
+    display:flex;
+    flex-direction: row;
+    border: 1px solid #888;
+    height: 95vh;
+}
+#c1{
+    width: 18%;
+    background: #d3d3d3;
+    text-align: center;
+    border:1px solid #333;
+    display:flex;
+    flex-direction: column;
+    overflow: auto
+
+}
+#c1 .explorer{
+    height: 95%;
+    width:100%;
+    text-align: initial
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding:5px;
+    padding-left:5px;
+    display:none;
+}
+li ul{
+    padding-left:15px;
+}
+li.folder{
+    margin:2px 0px;
+}
+li.file{
+    padding:2px;
+    padding-left:15px;
+    margin-top: 2px;
+}
+.fa-folder{
+    padding:5px;
+    color:#333;
+}
+.fa-angle-right{
+    padding:3px
+}
+ul li:hover{
+    cursor: pointer;
+}
+#c2 {
+    width: 80%;
+    padding-top:3px;
+    overflow: hidden;
+}
+
+.hidden {
+    display:none;
+}
